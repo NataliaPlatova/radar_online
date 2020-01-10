@@ -1,0 +1,84 @@
+body {
+    background-color: #f2eded;
+    margin: 0;
+    padding: 0;
+}
+
+.block-title {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.block-title h2{
+    font-family: 'Mediator Black';
+    font-size: 62px;
+    text-transform: uppercase;
+    margin: 0;
+ }
+
+.block-title span{
+    font-family: 'Mediator Bold';
+    font-size: 22px;
+    margin: 0 0 0 184px;
+}
+
+.catalouge {
+    background: url("images/background-2.png"), no-repeat;
+    background-size: cover;
+}
+
+.catalouge .container {
+    max-width: 1266px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.catalouge .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 75px 0;
+    width: 100%;
+}
+
+.catalouge .card-row {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.catalouge .card {
+    display: flex;
+    width: 25%;
+    flex-direction: column;
+    margin-right: 50px;
+    background-color: white;
+    min-height: 100px;
+    padding: 0;
+}
+
+.catalouge .card-title {
+    display: flex;
+    margin: 25px;
+    max-width: 100%;
+    align-items: center;
+    line-height: 21px;
+}
+
+.catalouge .card-title>h3 {
+    font-family: 'Mediator';
+    font-size: 14px;
+    text-transform: uppercase;
+    margin: 0 0 0 28px;
+}
+
+.catalouge .picture {
+    background-color: #f2eded;
+    width: 100%;
+}
+
+.catalouge .picture>img {
+    width: 100%;
+}
