@@ -18,9 +18,152 @@ body {
  }
 
 .block-title span{
-    font-family: 'Mediator Bold';
+    font-family: 'Mediator';
+    font-weight: bold;
     font-size: 22px;
     margin: 0 0 0 184px;
+}
+.nav-wrapper {
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+}
+
+.page-nav {
+    background-color: white;
+    border: none;
+    margin: 25px;
+    padding: 0;
+    min-height: 70px;
+    display: flex;
+    align-items: center;
+}
+
+.page-nav .container {
+    width: 1266px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    padding: 0 25px;
+}
+
+.page-nav .navigation {
+    list-style: none;
+    margin-right: 30px;
+    margin-left: auto;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.page-nav .navigation>li {
+    display: inline-block;
+    margin-right: 20px;
+    padding: 22px 0;
+}
+
+.page-nav .navigation>li.active {
+    border-bottom: 3px solid #0231ff;
+}
+
+.page-nav .navigation>li>a {
+    text-decoration: none;
+    display: block;
+    color: black;
+    font-family: 'Mediator';
+    font-size: 16px;
+}
+
+.page-nav button {
+    font-family: 'Mediator';
+    font-size: 16px;
+    color: white;
+    padding: 12px 43px;
+    max-width: 210px;
+    background-color: #0231ff;
+    border: none;
+    border-radius: 2px;
+}
+
+.main-screen {
+    background: url("images/background-1.png") no-repeat;
+    background-size: contain;
+    position: relative;
+}
+
+.main-screen .container {
+    max-width: 1266px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-screen .page-header {
+    margin-top: 377px;
+    margin-bottom: 70px;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-screen .page-header>h1 {
+    font-family: 'Mediator Black';
+    font-size: 122px;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+.main-screen .page-header>span {
+    font-family: 'Mediator';
+    font-weight: bold;
+    font-size: 22px;
+    margin: 0 0 30px 184px;
+}
+
+.main-screen .page-header>button {
+    background-color: blue;
+    color: white;
+    font-family: 'Mediator';
+    font-size: 16px;
+    padding: 10px 26px;
+    max-width: 210px;
+    border-radius: 2px;
+    border: none;
+}
+
+.main-screen .benefits {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 78px;
+}
+
+.main-screen .benefits-item {
+    display: flex;
+    flex-direction: row;
+    max-width: 690px;
+    align-items: center;
+    margin-bottom: 42px;
+}
+
+.main-screen .benefits-icon {
+    background-color: white;
+    min-width: 80px;
+    height: 80px;
+    border-radius: 50px;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-screen .benefits-icon>i {
+    color: #0231ff;
+    font-size: 27px;
+}
+
+.main-screen .benefits-item>span {
+    font-family: 'Mediator Light';
+    font-size: 16px;
+    line-height: 28px;
+    margin-left: 46px;
 }
 
 .catalouge {
@@ -53,15 +196,20 @@ body {
     display: flex;
     width: 25%;
     flex-direction: column;
+    align-items: center;
     margin-right: 50px;
     background-color: white;
     min-height: 100px;
     padding: 0;
 }
 
+.catalouge .card:last-child {
+    margin: 0;
+}
+
 .catalouge .card-title {
     display: flex;
-    margin: 25px;
+    padding: 25px;
     max-width: 100%;
     align-items: center;
     line-height: 21px;
@@ -82,3 +230,270 @@ body {
 .catalouge .picture>img {
     width: 100%;
 }
+
+.catalouge .info {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 20px 25px;
+    box-sizing: border-box;
+}
+
+.catalouge .info-text {
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 0 28px;
+}
+
+.catalouge .text {
+    font-family: Mediator;
+    font-size: 14px;
+}
+
+.catalouge .text-title {
+    color: #7989b5;
+}
+
+.catalouge .learn-more {
+    padding: 10px 53px;
+    background-color: #0231ff;
+    border-radius: 20px;
+    font-family: 'Mediator';
+    font-size: 14px;
+    line-height: 21px;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    max-width: 180px;
+    margin-bottom: 28px;
+}
+
+.catalouge .more-buildings {
+    margin-top: 62px;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    font-family: 'Mediator';
+    font-size: 16px;
+    line-height: 21px;
+    padding: 14px 52px;
+    max-width: 290px;
+    border-radius: 2px;
+    background-color: #0231ff;
+}
+
+.news .container {
+    max-width: 1266px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.news .content {
+    display: flex;
+    flex-direction: row;
+    margin: 75px 0 75px 184px;
+    justify-content: space-between;
+}
+
+.news .big-news {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 450px;
+}
+
+.news .big-news>h3 {
+    font-family: "Mediator";
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 24px;
+    margin: 0;
+}
+
+.news .big-news>span {
+    font-family: "Mediator Light";
+    font-size: 12px;
+    line-height: 24px;
+    color: #0231ff;
+}
+
+.news p {
+    font-family: 'Mediator Light';
+    font-size: 14px;
+    line-height: 24px;
+    margin: 0;
+}
+
+.news .big-news>a {
+    padding: 10px 53px;
+    background-color: #0231ff;
+    border-radius: 20px;
+    font-family: 'Mediator';
+    font-size: 14px;
+    line-height: 21px;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    max-width: 180px;
+    margin-top: 36px;
+}
+
+.news .small-topics {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 500px;
+}
+
+.news .small-topic {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 16px;
+    border-bottom: 1px solid #bfbfbf;
+}
+
+.news .small-topic:last-child {
+    padding-top: 16px;
+    border-bottom: none;
+}
+
+.news .small-topic>h3 {
+    font-family: "Mediator";
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 24px;
+    margin: 0;
+}
+
+.news .small-topic>span {
+    font-family: "Mediator Light";
+    font-size: 12px;
+    line-height: 24px;
+    color: black;
+}
+
+.news .small-topic>a {
+    font-family: 'Mediator';
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 24px;
+    margin: 0;
+    text-decoration: none;
+}
+
+.promo {
+    background-color: #0231ff;
+    position: relative;
+}
+
+.promo .container {
+    max-width: 1266px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    padding: 113px 0 70px 0;
+}
+
+.promo .title {
+    font-family: 'Mediator Black';
+    font-size: 122px;
+    color: white;
+    text-transform: uppercase;
+}
+
+.promo .subtitle {
+    margin-left: 280px;
+    font-family: 'Mediator';
+    font-weight: bold;
+    font-size: 22px;
+    color: white;
+}
+
+.promo a {
+    padding: 10px 42px;
+    background-color: white;
+    border-radius: 2px;
+    font-family: 'Mediator';
+    font-size: 16px;
+    line-height: 21px;
+    color: black;
+    text-decoration: none;
+    text-align: center;
+    max-width: 290px;
+    align-self: center;
+    margin-top: 36px;
+}
+
+.promo .promo-image {
+    width: 436px;
+    height: 420px;
+    background: url("images/building.png") no-repeat 0 0;
+    position: absolute;
+    top: -30px;
+    right: 50px;
+}
+
+.page-footer {
+    background-color: white;
+}
+
+.page-footer .container {
+    max-width: 1266px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.page-footer .footer-nav {
+    display: flex;
+    flex-direction: row;
+    margin-top: 110px;
+    margin-bottom: 85px;
+    justify-content: space-between;
+}
+
+.page-footer .nav-column {
+    display: flex;
+    flex-direction: column;
+    min-width: 211px;
+}
+
+.page-footer .nav-column>h3 {
+    font-family: 'Mediator';
+    font-weight: bold;
+    font-size: 18px;
+    color: #0231ff;
+    margin: 0 0 24px 0;
+}
+
+.page-footer .nav-column>a {
+    font-family: 'Mediator';
+    font-size: 16px;
+    margin: 0;
+    margin-bottom: 10px;
+    text-decoration: none;
+    color: black;
+}
+
+.page-footer .contact-info {
+    display: flex;
+    margin-left: 180px;
+    margin-bottom: 36px;
+}
+
+.page-footer .contact-item {
+    display: flex;
+    align-items: center;
+    margin-right: 60px;
+}
+
+.page-footer .contact-icon {
+    font-size: 24px;
+    color: #0231ff;
+}
+
+.page-footer .contact-item>span {
+    font-family: 'Mediator Black';
+    font-size: 18px;
+    margin-left: 8px;
+}
+
