@@ -2,556 +2,251 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Radar online</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="./index.css">
+    <meta name="viewport" content="width=device-width">
+    <title>Radar_online</title>
+    <link rel="stylesheet" href="./styles.css" type="text/css">
     <script src="https://kit.fontawesome.com/0a7761ea3b.js"></script>
 </head>
 <body>
-    <div class="container-fluid m0 p0 bgimage">
-        <nav class="navbar navbar-expand-xl bg-white sticky-top new-nav">
-            <a class="navbar-brand" href="#" style="margin: 0.75rem 0"><img src="images/logo.png" /></a>
-
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon d-flex align-items-center justify-content-center"><i class="fas fa-bars"></i></span>
-            </button>
-
-            <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
-                <ul class="navbar-nav">
-                    <li class="nav-item"><a class="nav-link" href="#" >О радаре</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Все новостройки</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Подбор новостроек</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Ипотека</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Новости недвижимости</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Контакты</a></li>
-                </ul>
+<header>
+    <div class="nav-wrapper">
+        <nav class="page-nav">
+            <div class="container">
+                <div class="logo">
+                    <img src="images/logo.png" width="82" height="34" alt="logo" />
+                </div>
+                <div class="navigation-menu-wrapper">
+                    <button class="burger"></button>
+                    <ul class="navigation">
+                        <li class="active"><a href="#">О радаре</a></li>
+                        <li><a href="#">Все новостройки</a></li>
+                        <li><a href="#">Подбор новостроек</a></li>
+                        <li><a href="#">Ипотека</a></li>
+                        <li><a href="#">Новости недвижимости</a></li>
+                        <li><a href="#">Контакты</a></li>
+                    </ul>
+                </div>
+                <button class="phone-call">Заказать звонок</button>
             </div>
-
-            <button type="button" class="btn btn-primary nav-button">Заказать звонок</button>
         </nav>
-
-        <div class="container-fluid m0 p0" id="glass-button">
-            <div class="row">
-                <div class="col-4">
-                    <a href="#" id="glass-button-link"><img src="./images/glass.png" id="glass-icon" /></a>
+    </div>
+</header>
+<main>
+    <section class="main-screen">
+        <div class="container">
+            <div class="page-header">
+                <h1>Радар</h1>
+                <span>это больше, чем каталог недвижимости</span>
+                <button>Приступить к поиску</button>
+            </div>
+            <div class="benefits">
+                <div class="benefits-item">
+                    <div class="benefits-icon">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <span>На Радаре 15024 варианта квартир в новостройках г.Новосибирска</span>
+                </div>
+                <div class="benefits-item">
+                    <div class="benefits-icon">
+                        <i class="fas fa-crosshairs"></i>
+                    </div>
+                    <span>Радар помог 2757 семьям найти новое жилье</span>
+                </div>
+                <div class="benefits-item">
+                    <div class="benefits-icon">
+                        <i class="fas fa-thumbs-up"></i>
+                    </div>
+                    <span>На Радаре только проверенные  и надежные застройщики, каждый объект недвижимости тщательно проверяется специалистами радара</span>
                 </div>
             </div>
         </div>
-
-        <div class="container-fluid m0 p0">
-            <div class="container-fluid" style='width:auto; margin: 1.5rem; margin-bottom: 120px; padding: 15% 1.5rem 0 1.5rem'>
-                <div class="row">
-                    <div class="col-8">
-                        <div class="header1">
-                            <h1 class="n-h1">Радар</h1>
-
-                            <div class="row" style="margin: 2vw 0">
-                                <div class="col-md-0 col-lg-3"></div>
-                                <div class="col-sm-12 col-md-9"><h5 class="n-h5">это больше чем каталог недвижимости</h5></div>
-                            </div>
-
-                            <button type="button" class="btn btn-primary bg-custom-blue">Приступить к поиску</button>
+        <button class="search"></button>
+    </section>
+    <section class="catalouge">
+        <div class="container">
+            <div class="block-title">
+                <h2 class="title-h2">Каталог</h2>
+                <span class="subtitle-h2">жилых комплексов</span>
+            </div>
+            <div class="content">
+                <div class="card-row">
+                    <div class="card">
+                        <div class="card-title">
+                            <img src="images/house-icon.png" width="20" height="25" alt="building-icon">
+                            <h3>Жилой комплекс "на Демьяна Бедного"</h3>
                         </div>
+                        <div class="picture">
+                            <img src="images/catalouge/catalouge-1.png" alt="first-building">
+                        </div>
+                        <div class="info">
+                            <img src="images/info-icon.png" width="22" height="21" alt="info-icon">
+                            <div class="info-text">
+                                <span class="text"><span class="text-title">Район:</span> Калининский</span>
+                                <span class="text"><span class="text-title">Цены:</span> от 2,5 млн руб</span>
+                            </div>
+                        </div>
+                        <a href="#" class="learn-more">Подробнее</a>
+                    </div>
+                    <div class="card">
+                        <div class="card-title">
+                            <img src="images/house-icon.png" width="20" height="25" alt="building-icon">
+                            <h3>Жилой комплекс "на Демьяна Бедного"</h3>
+                        </div>
+                        <div class="picture">
+                            <img src="images/catalouge/catalouge-1.png" alt="first-building">
+                        </div>
+                        <div class="info">
+                            <img src="images/info-icon.png" width="22" height="21" alt="info-icon">
+                            <div class="info-text">
+                                <span class="text"><span class="text-title">Район:</span> Калининский</span>
+                                <span class="text"><span class="text-title">Цены:</span> от 2,5 млн руб</span>
+                            </div>
+                        </div>
+                        <a href="#" class="learn-more">Подробнее</a>
+                    </div>
+                    <div class="card">
+                        <div class="card-title">
+                            <img src="images/house-icon.png" width="20" height="25" alt="building-icon">
+                            <h3>Жилой комплекс "на Демьяна Бедного"</h3>
+                        </div>
+                        <div class="picture">
+                            <img src="images/catalouge/catalouge-1.png" alt="first-building">
+                        </div>
+                        <div class="info">
+                            <img src="images/info-icon.png" width="22" height="21" alt="info-icon">
+                            <div class="info-text">
+                                <span class="text"><span class="text-title">Район:</span> Калининский</span>
+                                <span class="text"><span class="text-title">Цены:</span> от 2,5 млн руб</span>
+                            </div>
+                        </div>
+                        <a href="#" class="learn-more">Подробнее</a>
+                    </div>
+                    <div class="card">
+                        <div class="card-title">
+                            <img src="images/house-icon.png" width="20" height="25" alt="building-icon">
+                            <h3>Жилой комплекс "на Демьяна Бедного"</h3>
+                        </div>
+                        <div class="picture">
+                            <img src="images/catalouge/catalouge-1.png" alt="first-building">
+                        </div>
+                        <div class="info">
+                            <img src="images/info-icon.png" width="22" height="21" alt="info-icon">
+                            <div class="info-text">
+                                <span class="text"><span class="text-title">Район:</span> Калининский</span>
+                                <span class="text"><span class="text-title">Цены:</span> от 2,5 млн руб</span>
+                            </div>
+                        </div>
+                        <a href="#" class="learn-more">Подробнее</a>
                     </div>
                 </div>
-
-                <div class="margin: 0">
-                    <div class="row d-flex align-items-center info">
-                        <div class="col-sm-3 col-md-2">
-                            <div class="d-flex justify-content-center align-items-center main-icon-card">
-                                <i class="fas fa-home" style="color: #0231ff"></i>
-                            </div>
-                        </div>
-                        <div class="col-sm-7 col-md-10">
-                            <p class="n-p">На Радаре 15024 варианта квартир<br> в новостройках г.Новосибирска</p>
-                        </div>
+                <a href="#" class="more-buildings">Смотреть все комплексы</a>
+            </div>
+        </div>
+    </section>
+    <section class="news">
+        <div class="container">
+            <div class="block-title">
+                <h2 class="title-h2">Новости</h2>
+                <span class="subtitle-h2">недвижимости</span>
+            </div>
+            <div class="content">
+                <div class="big-news">
+                    <h3>Ученые обнаружили на Юпитере пульсирующее сияние</h3>
+                    <span>03.11.2017г</span>
+                    <p>Международная группа ученых зафиксировала появление на южном полюсе Юпитере рентгеновских полярных сияний. Причину явления специалисты пока не смогли установить. По мнению ученых, вспышки появляются из-за различных процессов в магнитном поле планеты.</p>
+                    <a href="#">Подробнее</a>
+                </div>
+                <div class="small-topics">
+                    <div class="small-topic">
+                        <h3>«М.Видео» запускает trade-in старых смартфонов Apple и Samsung</h3>
+                        <span>02.11.2017г</span>
+                        <a href="#">Подробнее...</a>
                     </div>
-
-                    <div class='row d-flex align-items-center info'>
-                        <div class="col-sm-3 col-md-2">
-                            <div class="d-flex justify-content-center align-items-center main-icon-card">
-                                <i class="fas fa-crosshairs" style="color: #0231ff"></i>
-                            </div>
-                        </div>
-                        <div class="col-sm-7 col-md-10">
-                            <p class="n-p">Радар помог 2757 семьям найти новое жилье</p>
-                        </div>
-                    </div>
-
-                    <div class='row d-flex align-items-center info'>
-                        <div class="col-sm-3 col-md-2">
-                            <div class="d-flex justify-content-center align-items-center main-icon-card">
-                                <i class="fas fa-thumbs-up" style="color: #0231ff"></i>
-                            </div>
-                        </div>
-                        <div class="col-sm-7 col-md-10">
-                            <p class="n-p">На Радаре только проверенные  и надежные застройщики, каждый<br>объект недвижимости тщательно проверяется специалистами радара</p>
-                        </div>
+                    <div class="small-topic">
+                        <h3>В России льготный лизинг расширили на легковые автомобили</h3>
+                        <span>02.11.2017г</span>
+                        <a href="#">Подробнее...</a>
                     </div>
                 </div>
+            </div>
+        </div>
+    </section>
+    <section class="best"></section>
+    <section class="promo">
+        <div class="container">
+            <span class="title">Выбрать</span>
+            <span class="subtitle">квартиру по собственным параметрам</span>
+            <a href="#">Смотреть все предложения</a>
+        </div>
+        <div class="promo-image"></div>
+    </section>
+</main>
+<footer class="page-footer">
+    <div class="container">
+        <div class="footer-nav">
+            <div class="logo" style="margin-right: 96px">
+                <img src="images/logo.png" width="82" height="34" alt="logo" />
+            </div>
+            <div class="nav-column">
+                <h3>О радаре</h3>
+                <a href="#">Что такое радар</a>
+                <a href="#">Как это работает</a>
+                <a href="#">В чем удобство</a>
+            </div>
+            <div class="nav-column">
+                <h3>Все новостройки</h3>
+                <a href="#">Левый берег</a>
+                <a href="#">Правй берег</a>
+            </div>
+            <div class="nav-column">
+                <h3>Подбор новостроек</h3>
+                <a href="#">По району</a>
+                <a href="#">По бюджету</a>
+            </div>
+            <div class="nav-column">
+                <h3>Ипотека</h3>
+                <a href="#">Как оформить</a>
+                <a href="#">Какие банки</a>
+            </div>
+            <div class="nav-column">
+                <h3>Контакты</h3>
+                <a href="#">Позвонить нам</a>
+                <a href="#">Написать нам</a>
+            </div>
+        </div>
+        <div class="contact-info">
+            <div class="contact-item">
+                <div class="contact-icon">
+                    <i class="fas fa-phone-alt"></i>
+                </div>
+                <span>+7(913) 914-83-46</span>
+            </div>
+            <div class="contact-item">
+                <div class="contact-icon">
+                    <i class="fas far fa-envelope"></i>
+                </div>
+                <span>info@naradare.online</span>
+            </div>
+            <div class="social">
+                <a href="#" class="social-icon">
+                    <i class="fab fa-google-plus-square"></i>
+                </a>
+                <a href="#" class="social-icon">
+                    <i class="fab fa-facebook-square"></i>
+                </a>
+                <a href="#" class="social-icon">
+                    <i class="fab fa-youtube-square"></i>
+                </a>
+                <a href="#" class="social-icon">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="#" class="social-icon">
+                    <i class="fab fa-vk"></i>
+                </a>
             </div>
         </div>
     </div>
-        <div class="container-fluid bg-image-2">
-            <div class="container-fluid h-m1-5 h-p1-5" style="width: auto">
-                <div class="header2">
-                    <h2 class="n-h2">Каталог</h2>
-                    <div class="row">
-                        <div class="col-2"></div>
-                        <div class="col-10">
-                            <h5 class="n-h5">жилых комплексов</h5>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div class="col-sm-12 col-md-6 col-xl-3">
-                            <div class="card new-card">
-                                <div class="card-body">
-                                    <div class="row d-flex align-items-center">
-                                        <div class="col-3 d-flex justify-content-center">
-                                            <img src="./images/house-icon.png" alt="Generic placeholder image">
-                                        </div>
-                                        <div class="col-9">
-                                            <h4 class="n-h4">Жилой комплекс<br>на&nbspДемьяна&nbspБедного</h4>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <img class="card-img no-rad" src="./images/3-3.png" alt="img"/>
-
-                                <div class="card-body">
-                                    <div class="row d-flex align-items-center">
-                                        <div class="col-3 d-flex justify-content-center">
-                                            <img src="./images/info-icon.png" alt="Generic placeholder image">
-                                        </div>
-                                        <div class="col-9">
-                                            <p class="n-p text-secondary card-text">Район:<span style="color: black"> Калининский</span></p>
-                                            <p class="n-p text-secondary card-text">Цены:<span style="color: black"> от&nbsp2,5&nbspмлн&nbspруб</span></p>
-                                        </div>
-                                    </div>
-                                    <div class="d-flex justify-content-center">
-                                        <div style="width: 80%">
-                                            <a href="#" class="btn btn-primary card-button">Подробнее</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                    </div>
-
-                    <div class="col-sm-12 col-md-6 col-xl-3">
-                        <div class="card new-card">
-                            <div class="card-body">
-                                <div class="row d-flex align-items-center">
-                                    <div class="col-3 d-flex justify-content-center">
-                                        <img src="./images/house-icon.png" alt="Generic placeholder image">
-                                    </div>
-                                    <div class="col-9">
-                                        <h4 class="n-h4">Жилой дом<br>на&nbspКарамзина&nbspстр.&nbsp3</h4>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <img class="card-img no-rad" src="./images/3-3.png" alt="img"/>
-
-                            <div class="card-body">
-                                <div class="row d-flex align-items-center">
-                                    <div class="col-3 d-flex justify-content-center">
-                                        <img src="./images/info-icon.png" alt="Generic placeholder image">
-                                    </div>
-                                    <div class="col-9">
-                                        <p class="n-p text-secondary card-text">Район:<span style="color: black"> Калининский</span></p>
-                                        <p class="n-p text-secondary card-text">Цены:<span style="color: black"> от&nbsp2,5&nbspмлн&nbspруб</span></p>
-                                    </div>
-                                </div>
-                                <div class="d-flex justify-content-center">
-                                    <div style="width: 80%">
-                                        <a href="#" class="btn btn-primary card-button">Подробнее</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-sm-12 col-md-6 col-xl-3">
-                        <div class="card new-card">
-                            <div class="card-body">
-                                <div class="row d-flex align-items-center">
-                                    <div class="col-3 d-flex justify-content-center">
-                                        <img src="./images/house-icon.png" alt="Generic placeholder image">
-                                    </div>
-                                    <div class="col-9">
-                                        <h4 class="n-h4">Жилой комплекс<br>"Бавария"</h4>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <img class="card-img no-rad" src="./images/3-3.png" alt="img"/>
-
-                            <div class="card-body">
-                                <div class="row d-flex align-items-center">
-                                    <div class="col-3 d-flex justify-content-center">
-                                        <img src="./images/info-icon.png" alt="Generic placeholder image">
-                                    </div>
-                                    <div class="col-9">
-                                        <p class="n-p text-secondary card-text">Район:<span style="color: black"> Калининский</span></p>
-                                        <p class="n-p text-secondary card-text">Цены:<span style="color: black"> от&nbsp2,5&nbspмлн&nbspруб</span></p>
-                                    </div>
-                                </div>
-                                <div class="d-flex justify-content-center">
-                                    <div style="width: 80%">
-                                        <a href="#" class="btn btn-primary card-button">Подробнее</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-sm-12 col-md-6 col-xl-3">
-                        <div class="card new-card">
-                            <div class="card-body">
-                                <div class="row d-flex align-items-center">
-                                    <div class="col-3 d-flex justify-content-center">
-                                        <img src="./images/house-icon.png" alt="Generic placeholder image">
-                                    </div>
-                                    <div class="col-9">
-                                        <h4 class="n-h4">Жилой комплекс<br>"Оазис"</h4>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <img class="card-img no-rad" src="./images/3-3.png" alt="img"/>
-
-                            <div class="card-body">
-                                <div class="row d-flex align-items-center">
-                                    <div class="col-3 d-flex justify-content-center">
-                                        <img src="./images/info-icon.png" alt="Generic placeholder image">
-                                    </div>
-                                    <div class="col-9">
-                                        <p class="n-p text-secondary card-text">Район:<span style="color: black"> Калининский</span></p>
-                                        <p class="n-p text-secondary card-text">Цены:<span style="color: black"> от&nbsp2,5&nbspмлн&nbspруб</span></p>
-                                    </div>
-                                </div>
-                                <div class="d-flex justify-content-center">
-                                    <div style="width: 80%">
-                                        <a href="#" class="btn btn-primary card-button">Подробнее</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="d-flex justify-content-center button-center">
-                        <div class="col-sm-12 col-md-8 col-lg-3">
-                            <button type="button" class="btn btn-primary center">Смотреть все комплексы</button>
-                        </div>
-                </div>
-
-                <div class="header2">
-                    <h2 class="n-h2">Новости</h2>
-                    <div class="row">
-                        <div class="col-2"></div>
-                        <div class="col-10">
-                            <h5 class="n-h5">недвижимости</h5>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div class="col-sm-0 col-lg-2"></div>
-                    <div class="col-sm-12 col-md-6 col-lg-4">
-                        <h3 class="n-h3">Ученые обнаружили на Юпитере пульсирующее сияние</h3>
-                        <p class="n-p news-date-text">03.11.2017г</p>
-                        <p class="n-p">Международная группа ученых зафиксировала появление на южном полюсе Юпитере рентгеновских полярных сияний. Причину явления специалисты пока не смогли установить. По мнению ученых, вспышки появляются из-за различных процессов в магнитном поле планеты.</p>
-                        <div class="row" style="margin-bottom: 1.5rem">
-                            <div class="col-7">
-                                <a href="#" class="btn btn-primary card-button">Подробнее</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-sm-0 col-md-1 col-lg-2"></div>
-
-                    <div class="col-sm-12 col-md-5 col-lg-4">
-                        <div style="margin-bottom: 2rem">
-                            <h3 class="n-h3">М.Видео запускает trade-in старых смартфонов Apple и Samsung</h3>
-                            <p class="n-p news-date-text">03.11.2017г</p>
-                            <a class="news-link" href="#">Подробнее...</a>
-                        </div>
-                        <div style="margin-bottom: 2rem">
-                            <h3 class="n-h3">В России льготный лизинг расширили на легковые автомобили</h3>
-                            <p class="n-p news-date-text">03.11.2017г</p>
-                            <a class="news-link" href="#">Подробнее...</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="container-fluid bg-image-2">
-            <div class="container-fluid h-m1-5 h-p1-5" style="width: auto">
-                <div class="header2">
-                    <h2 class="n-h2">Лучшие</h2>
-                    <div class="row">
-                        <div class="col-2"></div>
-                        <div class="col-10">
-                            <h5 class="n-h5">предложения недвижимости</h5>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div class="col-sm-12 col-md-6 col-xl-3">
-                        <div class="card new-card">
-                            <div class="card-body">
-                                <div class="row d-flex align-items-center">
-                                    <div class="col-3 d-flex justify-content-center">
-                                        <img src="./images/house-icon.png" alt="Generic placeholder image">
-                                    </div>
-                                    <div class="col-9">
-                                        <h4 class="n-h4">Жилой комплекс<br>на&nbspДемьяна&nbspБедного</h4>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <img class="card-img no-rad" src="./images/3-3.png" alt="img"/>
-
-                            <div class="card-body">
-                                <div class="row d-flex align-items-center">
-                                    <div class="col-3 d-flex justify-content-center">
-                                        <img src="./images/info-icon.png" alt="Generic placeholder image">
-                                    </div>
-                                    <div class="col-9">
-                                        <p class="n-p text-secondary card-text">Район:<span style="color: black"> Калининский</span></p>
-                                        <p class="n-p text-secondary card-text">Цены:<span style="color: black"> от&nbsp2,5&nbspмлн&nbspруб</span></p>
-                                    </div>
-                                </div>
-                                <div class="d-flex justify-content-center">
-                                    <div style="width: 80%">
-                                        <a href="#" class="btn btn-primary card-button">Подробнее</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-sm-12 col-md-6 col-xl-3">
-                        <div class="card new-card">
-                            <div class="card-body">
-                                <div class="row d-flex align-items-center">
-                                    <div class="col-3 d-flex justify-content-center">
-                                        <img src="./images/house-icon.png" alt="Generic placeholder image">
-                                    </div>
-                                    <div class="col-9">
-                                        <h4 class="n-h4">Жилой дом<br>на&nbspКарамзина&nbspстр.&nbsp3</h4>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <img class="card-img no-rad" src="./images/3-3.png" alt="img"/>
-
-                            <div class="card-body">
-                                <div class="row d-flex align-items-center">
-                                    <div class="col-3 d-flex justify-content-center">
-                                        <img src="./images/info-icon.png" alt="Generic placeholder image">
-                                    </div>
-                                    <div class="col-9">
-                                        <p class="n-p text-secondary card-text">Район:<span style="color: black"> Калининский</span></p>
-                                        <p class="n-p text-secondary card-text">Цены:<span style="color: black"> от&nbsp2,5&nbspмлн&nbspруб</span></p>
-                                    </div>
-                                </div>
-                                <div class="d-flex justify-content-center">
-                                    <div style="width: 80%">
-                                        <a href="#" class="btn btn-primary card-button">Подробнее</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-sm-12 col-md-6 col-xl-3">
-                        <div class="card new-card">
-                            <div class="card-body">
-                                <div class="row d-flex align-items-center">
-                                    <div class="col-3 d-flex justify-content-center">
-                                        <img src="./images/house-icon.png" alt="Generic placeholder image">
-                                    </div>
-                                    <div class="col-9">
-                                        <h4 class="n-h4">Жилой комплекс<br>"Бавария"</h4>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <img class="card-img no-rad" src="./images/3-3.png" alt="img"/>
-
-                            <div class="card-body">
-                                <div class="row d-flex align-items-center">
-                                    <div class="col-3 d-flex justify-content-center">
-                                        <img src="./images/info-icon.png" alt="Generic placeholder image">
-                                    </div>
-                                    <div class="col-9">
-                                        <p class="n-p text-secondary card-text">Район:<span style="color: black"> Калининский</span></p>
-                                        <p class="n-p text-secondary card-text">Цены:<span style="color: black"> от&nbsp2,5&nbspмлн&nbspруб</span></p>
-                                    </div>
-                                </div>
-                                <div class="d-flex justify-content-center">
-                                    <div style="width: 80%">
-                                        <a href="#" class="btn btn-primary card-button">Подробнее</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-sm-12 col-md-6 col-xl-3">
-                        <div class="card new-card">
-                            <div class="card-body">
-                                <div class="row d-flex align-items-center">
-                                    <div class="col-3 d-flex justify-content-center">
-                                        <img src="./images/house-icon.png" alt="Generic placeholder image">
-                                    </div>
-                                    <div class="col-9">
-                                        <h4 class="n-h4">Жилой комплекс<br>"Оазис"</h4>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <img class="card-img no-rad" src="./images/3-3.png" alt="img"/>
-
-                            <div class="card-body">
-                                <div class="row d-flex align-items-center">
-                                    <div class="col-3 d-flex justify-content-center">
-                                        <img src="./images/info-icon.png" alt="Generic placeholder image">
-                                    </div>
-                                    <div class="col-9">
-                                        <p class="n-p text-secondary card-text">Район:<span style="color: black"> Калининский</span></p>
-                                        <p class="n-p text-secondary card-text">Цены:<span style="color: black"> от&nbsp2,5&nbspмлн&nbspруб</span></p>
-                                    </div>
-                                </div>
-                                <div class="d-flex justify-content-center">
-                                    <div style="width: 80%">
-                                        <a href="#" class="btn btn-primary card-button">Подробнее</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="d-flex justify-content-center button-center">
-                    <div class="col-sm-12 col-md-8 col-lg-3">
-                        <button type="button" class="btn btn-primary center">Смотреть все комплексы</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    <div class="jumbotron jumbotron-fluid bg-custom-blue m0" style="margin-top: 120px;">
-        <div class="container-fluid h-m1-5 h-p1-5" style="position: relative">
-            <div class="row">
-                <div class="col-12">
-                    <h1 class="text-white">Выбрать</h1>
-                    <div class="row v-m2">
-                        <div class="col-sm-0 col-md-3"></div>
-                        <div class="col-sm-12 col-lg-9"><h5 class="n-h5 text-white">это больше чем каталог недвижимости</h5></div>
-                    </div>
-                    <div class="row d-flex justify-content-center button-center-white">
-                        <div class="col-sm-12 col-md-8 col-lg-3">
-                            <button type="button" class="btn btn-primary btn-light center-white">Смотреть все предложения</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row" style="position: absolute; top: -20px; left: 60%;">
-                <div class="col-4"><img src="./images/building.png" id="building-image"/></div>
-            </div>
-        </div>
-    </div>
-        <footer class="my-footer bg-white">
-            <div class="container-fluid">
-                <div class="row v-m4">
-                    <div class="col-sm-4 col-md-2" style="margin-bottom: 1rem"><img src="./images/logo.png"/></div>
-
-                    <div class="col-sm-4 col-md-2 m1">
-                        <h6 class="footer-header">О Радаре</h6>
-                        <p class="n-p footer-text">Что такое радар</p>
-                        <p class="n-p footer-text">Как это работает</p>
-                        <p class="n-p footer-text">В чем удобство</p>
-                    </div>
-
-                    <div class="col-sm-4 col-md-2 m1">
-                        <h6 class="footer-header">Все новостройки</h6>
-                        <p class="n-p footer-text">Левый берег</p>
-                        <p class="n-p footer-text">Правый берег</p>
-                    </div>
-
-                    <div class="col-sm-4 col-md-2 m1">
-                        <h6 class="footer-header">Подбор новостроек</h6>
-                        <p class="n-p footer-text">По району</p>
-                        <p class="n-p footer-text">По бюджету</p>
-                    </div>
-
-                    <div class="col-sm-4 col-md-2 m1">
-                        <h6 class="footer-header">Ипотека</h6>
-                        <p class="n-p footer-text">Как оформить</p>
-                        <p class="n-p footer-text">Какие банки</p>
-                    </div>
-                    <div class="col-sm-4 col-md-2 m1">
-                        <h6 class="footer-header">Контакты</h6>
-                        <p class="n-p footer-text">Позвонить нам</p>
-                        <p class="n-p footer-text">Написать нам</p>
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div class="col-sm-0 col-md-2"></div>
-
-                    <div class="col-sm-12 col-md-10">
-                        <div class="row d-flex align-items-center">
-                            <div class="col-5">
-                                <div class="row">
-                                    <div class="col-2 d-flex justify-content-center align-items-center">
-                                        <i class="fas fa-phone-alt footer-icon"></i>
-                                    </div>
-
-                                    <div class="col-10 d-flex align-items-center">
-                                        <h6 class="footer-icon-text">+7(913) 914-83-46</h6>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-5">
-                                <div class="row">
-                                    <div class="col-2 d-flex justify-content-center align-items-center">
-                                        <i class="far fa-envelope footer-icon"></i>
-                                    </div>
-                                    <div class="col-10 d-flex align-items-center">
-                                        <h6 class="footer-icon-text">info@naradare.online</h6>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-2"></div>
-                </div>
-            </div>
-        </footer>
-
-        <div class="jumbotron-fluid bg-custom-blue m0">
-            <div class="container-fluid p1-5 h-m1-5">
-                <p class="n-p text-white">ООО "Радар Недвижимости". Все права защищены С 2017</p>
-            </div>
-        </div>
-    </div>
-
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-            crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-            crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-            crossorigin="anonymous"></script>
-
+</footer>
 </body>
+<script src="main.js"></script>
 </html>
-
